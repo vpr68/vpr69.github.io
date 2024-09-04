@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #000000;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('https://i.pinimg.com/236x/9a/87/58/9a8758aad72bae19431dda8c92744e8e.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .article {
+            background-color: #fff;
+            margin: 15px;
+            padding: 20px;
+            flex: 1 1 calc(33.333% - 40px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .article img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+        .article:hover img {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+        .article h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+            .article {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MODA</h1>
+    </header>
+    <nav>
+        <a href="file:///C:/Users/Virginia%20Padilla/Desktop/Moda%202024/ALTA%20COSTURA.html">ALTA COSTURA</a>
+        <a href="file:///C:/Users/Virginia%20Padilla/Desktop/Moda%202024/PRET-A-PORTER.html">PRET-A-PORTER</a>
+        <a href="file:///C:/Users/Virginia%20Padilla/Desktop/Moda%202024/PRONTO%20MODA.html">PRONTO MODA</a>
+        <a href="file:///C:/Users/Virginia%20Padilla/Desktop/Moda%202024/HISTORIA%20DE%20LA%20MODA.html">HISTORIA DE LA MODA</a>
+        
+    </nav>
+    <div class="hero">
+        <h2>MODA 2024</h2>
+    </div>
+    <div class="content">
+        <div class="article">
+            <img src="C:\Users\Virginia Padilla\Desktop\Moda 2024\ESTILO DENIM.png" alt="Moda 1">
+            <h3>ULTIMAS TENDENCIAS</h3>
+            <p>El estilo Denim esta en super tendencia este 2024 este estilo a resaltado por su textura a entrado en la moda de alta costura por su originalidad y a la vez comodidad.</p>
+        </div>
+        <div class="article">
+            <img src="C:\Users\Virginia Padilla\Desktop\Moda 2024\corsets.png" alt="Moda 2">
+            <h3>LOS CORSETS Y CHALECOS MODA 2024</h3>
+            <p>Los chalecos y los corsets estan en super tendencia este 2024 se pueden combinar con todo vestidos, camisas normales, los puedes agregar como un accesorio a tus oufits son una pieza fundamental en tu armario!!!</p>
+        </div>
+        <div class="article">
+            <img src="C:\Users\Virginia Padilla\Desktop\Moda 2024\MODA EN ALTA COSTURA ESTILO COQUET.png" alt="Moda 3">
+            <h3>MODA EN ALTA COSTURA 2024 PRIMAVERA VERANO</h3>
+            <p>El estilo que oficialmente esta en tendencia en la alta costura este 2024 que fue presentado en el desfile de primavera verano en los desfiles de Chanel y Dior es el estilo coquette, este estilo romántico super femenino esta en tendencia, resaltando por el encaje y bordados que lleva, con lazos muy característicos.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Página creada por: 
+            <a href="https://www.instagram.com/virginiaaapadilla?igsh=MWlqeHNjczQwdG9reQ%3D%3D&utm_source=qr" target="_blank">@virginiaaapadilla</a>
+        </p>
+    </footer>
+
+    <script>
+        // JavaScript para animar las imágenes al hacer hover
+        document.querySelectorAll('.article img').forEach(img => {
+            img.addEventListener('mouseover', () => {
+                img.style.transform = 'scale(1.1)';
+                img.style.opacity = '0.8';
+            });
+
+            img.addEventListener('mouseout', () => {
+                img.style.transform = 'scale(1)';
+                img.style.opacity = '1';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de color de fondo</title>
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+  <h1></h1>
+  <p></p>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de color de texto</title>
+</head>
+<body>
+  <h1 style="color: rgb(255, 255, 255);">Historia de la moda</h1>
+  <br>
+  <p style="color: rgb(255, 255, 255);">
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de color de texto</title>
+</head>
+<body>
+  <h1 style="color: rgb(255, 255, 255);"></h1>
+  <p style="color: rgb(255, 255, 255);">La moda es un fenómeno que ha existido desde tiempos inmemoriales y ha evolucionado de formas sorprendentes a lo largo de los siglos. Pero, ¿alguna vez te has preguntado cuál es el origen de la moda tal como la conocemos hoy en día?
+    <br>
+    <br>
+    Para comprender el origen de la moda, debemos remontarnos a la antigua Grecia y Roma, donde la vestimenta era utilizada como una forma de comunicación visual y distinción social. Las togas y túnicas de los romanos, por ejemplo, eran indicadores de estatus y posición en la sociedad. Estos primeros intentos de diferenciación a través de la ropa sentaron las bases de lo que hoy conocemos como “moda”.
+    <br>
+    
+    Con el paso del tiempo, la moda se convirtió en una forma de expresión personal y artística. Durante el Renacimiento, por ejemplo, la ropa se convirtió en una forma de mostrar la riqueza y el poder de las personas. Los nobles y la realeza lucían prendas elaboradas con detalles exquisitos y materiales lujosos, mientras que los campesinos vestían de forma más sencilla y funcional.
+    <br>
+    <img src="C:\Users\Virginia Padilla\Downloads\TOGAS Y TUNICAS.jpg" alt="Descripción de la imagen" class="imagen">          
+  <br>
+    <h1 style="color: rgb(255, 255, 255);">Evolucion de la moda</h1>
+    <br>
+    <p style="color: rgb(255, 255, 255);">A medida que la moda evolucionaba, también lo hacían las tendencias. A principios del siglo XX, las revistas de moda comenzaron a influir en lo que la gente usaba. Los diseñadores de renombre y las marcas comenzaron a tener un papel importante en la definición de lo que se consideraba “de moda”.
+      <br>
+      <br>
+      <img src="C:\Users\Virginia Padilla\Downloads\Evolucion de la moda.png" alt="Descripción de la imagen" class="imagen">          
+      <br>
+      
+<html>
+<head>
+  <title>Mostrar una Imagen</title>
+  <style>
+    .imagen {
+      width: 50%;
+      height: auto;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <p></p>
+  Con el auge de la televisión en el siglo XX, las celebridades empezaron a tener un gran impacto en las tendencias de moda. La gente quería vestirse como sus ídolos y seguir sus estilos. Esto llevó al nacimiento de la cultura de la alfombra roja y a la influencia de las estrellas de cine y la música en la moda.
+
+
+</body>
+</html>
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia de la Moda</title>
+  <style>
+    body {
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .imagen {
+      width: 50%;
+      height: auto;
+      border: 2px solid black;
+      display: block;
+      margin: 10px auto;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    label, input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    input, textarea {
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Historia de la Moda</h1>
+  <p>La moda es un fenómeno que ha existido desde tiempos inmemoriales...</p>
+
+  <h2>Envíanos tu opinión sobre la Historia de la Moda a nuestro contacto de whatsApp</h2>
+  
+  <form id="opinionForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+    
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+    
+    <label for="opinion">Tu opinión:</label>
+    <textarea id="opinion" name="opinion" rows="5" placeholder="Escribe tu opinión aquí..." required></textarea>
+    
+    <button type="submit">Enviar Opinión</button>
+  </form>
+</div>
+
+<script>
+  document.getElementById('opinionForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Captura los valores del formulario
+    let nombre = document.getElementById('nombre').value;
+    let email = document.getElementById('email').value;
+    let opinion = document.getElementById('opinion').value;
+
+    // Genera el enlace de WhatsApp
+    let mensaje = `Hola, mi nombre es ${nombre}. Mi opinión sobre la Historia de la Moda es: ${opinion}. Mi correo es ${email}.`;
+    let whatsappURL = `https://wa.me/50498311624?text=${encodeURIComponent(mensaje)}`;
+    
+    // Abre el enlace de WhatsApp
+    window.open(whatsappURL, '_blank');
+  });
+</script>
+
+</body>
+</html>
